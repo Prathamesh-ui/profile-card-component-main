@@ -1,0 +1,195 @@
+/* Skip to content
+Why GitHub? 
+Team
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+
+Sign in
+Sign up
+MariaVillascusa
+/
+profile-card-component-main
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+profile-card-component-main/style.css
+@MariaVillascusa
+MariaVillascusa web design done
+Latest commit ab7e736 4 hours ago
+ History
+ 1 contributor
+151 lines (131 sloc)  2.24 KB */
+  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: hsl(185, 75%, 39%);
+}
+
+.circle1,
+.circle2,
+.attribution,
+.attribution a {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98.5vh;
+  background: url("images/bg-pattern-top.svg") top -30vh left -45vh no-repeat,
+    url("images/bg-pattern-bottom.svg") bottom -30vh right -45vh no-repeat;
+  background-size: 75vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: auto;
+}
+
+.top {
+  height: 165px;
+  background: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: 375px 165px;
+  border-radius: 15px 15px 0 0;
+}
+
+.image {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 110px;
+  height: 110px;
+  position: relative;
+  z-index: 50;
+}
+
+.avatar {
+  margin: auto;
+  margin-top: -69px;
+}
+
+.info {
+  height: 160px;
+  background: white;
+  text-align: center;
+  z-index: 1;
+  margin-top: -68px;
+}
+
+p {
+  text-align: center;
+}
+.name {
+  font-weight: 700;
+  margin-top: 5em;
+  color: hsl(229, 23%, 23%);
+}
+
+.age {
+  font-weight: 400;
+  color: rgba(45, 50, 72, 0.8);
+}
+
+.city {
+  font-size: 14px;
+  color: rgba(45, 50, 72, 0.8);
+  margin-top: 1em;
+}
+
+.stats {
+  display: flex;
+  height: 100px;
+  background: white;
+  border-top: 1px solid rgba(150, 150, 150, 0.3);
+  border-radius: 0 0 15px 15px;
+  justify-content: space-evenly;
+}
+
+.followers,
+.likes,
+.photos {
+  align-self: center;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.followers-letters,
+.likes-letters,
+.photos-letters {
+  font-weight: 400;
+  font-size: 11px;
+  color: rgba(45, 50, 72, 0.7);
+  letter-spacing: 1.5px;
+  margin-top: 0.5em;
+}
+
+@media screen and (min-width: 770px) {
+  body {
+    overflow: hidden;
+  }
+
+  .container {
+    background: none;
+  }
+
+  .circle1,
+  .circle2{
+    display: block;
+  }
+
+  .attribution,
+  .attribution a {
+    display: flex
+  }
+
+  .circle1 {
+    position: absolute;
+    z-index: -1;
+    margin: -25rem -32.5rem;
+  }
+  .circle2 {
+    position: absolute;
+    z-index: -1;
+    margin: 27rem 35rem;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: rgba(45, 50, 72, 0.9);
+    text-decoration: none;
+  }
+}
+/* © 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete */
